@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DESIGNS BY DEVESH</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:#000;
+      font-family: "Times New Roman", serif;
+      color:white;
+      overflow:hidden;
+    }
+
+    .container{
+      text-align:center;
+    }
+
+    .logo{
+      width:180px;
+      margin-bottom:35px;
+    }
+
+    h1{
+      font-size:4rem;
+      font-weight:300;
+      letter-spacing:12px;
+      margin-bottom:25px;
+    }
+
+    p{
+      font-size:1.1rem;
+      letter-spacing:14px;
+      opacity:0.8;
+    }
+
+    .line{
+      width:220px;
+      height:1px;
+      background:rgba(255,255,255,0.3);
+      margin:0 auto 25px auto;
+      position:relative;
+    }
+
+    .line::after{
+      content:"";
+      position:absolute;
+      left:50%;
+      top:50%;
+      transform:translate(-50%,-50%);
+      width:40px;
+      height:2px;
+      background:white;
+      box-shadow:0 0 15px white;
+    }
+
+    @media(max-width:768px){
+
+      .logo{
+        width:120px;
+      }
+
+      h1{
+        font-size:2rem;
+        letter-spacing:6px;
+      }
+
+      p{
+        font-size:0.9rem;
+        letter-spacing:8px;
+      }
+
+      .line{
+        width:140px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <img src="ddw.png" alt="Logo" class="logo">
+
+    <h1>DESIGNS BY DEVESH</h1>
+
+    <div class="line"></div>
+
+    <p>COMING SOON</p>
+
+  </div>
+
+</body>
+</html>
